@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "My Awesome Book",
-    "author": "Me",
+    "title": "Click, Clack, Code: How the Telegraph Made the World Talk",
+    "author": "Leena Levashvili and ChatGPT",
     "copyright": "© 2025 My Awesome Book",
     "description": "An interactive storybook created with Turn.js"
   },
@@ -9,8 +9,10 @@
     {
       "id": "cover",
       "type": "cover",
-      "title": "My Awesome Book",
-      "author": "By Me",
+      "title": "Click, Clack, Code: How the Telegraph Made the World Talk",
+      "author": "Leena Levashvili and ChatGPT",
+      "image": "illustrations/cover.jpg",
+      "imageAlt": "Book cover illustration",
       "startReadingText": "Click or drag to start reading"
     },
     {
@@ -45,28 +47,48 @@
       "type": "content",
       "pageNumber": 3,
       "title": "Welcome",
-      "content": "This is page one. Drag from the corner to flip!"
+      "content": "This is page one. Drag from the corner to flip!",
+      "image": {
+        "src": "illustrations/chapter1/welcome.jpg",
+        "alt": "Welcome illustration",
+        "caption": "Caption for welcome page image"
+      }
     },
     {
       "id": "chapter1",
       "type": "content",
       "pageNumber": 4,
       "title": "Chapter 1",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": {
+        "src": "illustrations/chapter1/intro.jpg",
+        "alt": "Chapter 1 illustration",
+        "caption": "Caption for Chapter 1 image"
+      }
     },
     {
       "id": "chapter2",
       "type": "content",
       "pageNumber": 5,
       "title": "Chapter 2",
-      "content": "More content goes here. Try flipping back and forth!"
+      "content": "More content goes here. Try flipping back and forth!",
+      "image": {
+        "src": "illustrations/chapter2/scene1.jpg",
+        "alt": "Chapter 2 illustration",
+        "caption": "Caption for Chapter 2 image"
+      }
     },
     {
       "id": "ending",
       "type": "content",
       "pageNumber": 6,
       "title": "The End",
-      "content": "Thanks for reading! This is the last sample page."
+      "content": "Thanks for reading! This is the last sample page.",
+      "image": {
+        "src": "illustrations/chapter3/ending.jpg",
+        "alt": "Ending illustration",
+        "caption": "Caption for ending page image"
+      }
     }
   ]
 } 
