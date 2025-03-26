@@ -1,0 +1,301 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and Footer */
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+  color: #2c3e50;
+}
+
+header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2em;
+}
+
+/* Book container */
+.book-container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+/* Turn.js book */
+#book {
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Page styling */
+.page {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 40px;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cover page */
+.cover {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cover:hover {
+  transform: scale(1.02);
+}
+
+.cover-content {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.cover h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.cover .author {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.cover-image {
+  margin: 2rem 0;
+}
+
+.cover-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.start-reading {
+  font-style: italic;
+  color: #666;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #3498db;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.start-reading:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* Table of Contents */
+.toc {
+  background: #f8f9fa;
+}
+
+.toc h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.toc-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc-nav li {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.toc-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.toc-nav a:hover {
+  color: #3498db;
+}
+
+/* Page content */
+.page article {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-number {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.page article h2 {
+  margin-bottom: 1.5em;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.page article p {
+  margin-bottom: 1.5em;
+  font-size: 1.1rem;
+}
+
+/* Figures with images */
+figure {
+  margin: 2em 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+figure figcaption {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.8em;
+  font-style: italic;
+}
+
+/* Navigation Controls */
+.navigation-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #2980b9;
+}
+
+.nav-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+#page-indicator {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  body {
+    margin: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .page {
+    padding: 20px;
+  }
+
+  .cover h2 {
+    font-size: 2rem;
+  }
+
+  .cover .author {
+    font-size: 1.2rem;
+  }
+
+  .navigation-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+}
+
+/* Loading State */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading::after {
+  content: "Loading...";
+  font-size: 1.2rem;
+  color: #666;
+}
