@@ -1,18 +1,8 @@
 {
   "metadata": {
-<<<<<<< HEAD
     "title": "Click, Clack, Code: How the Telegraph Made the World Talk",
     "author": "Leena Levashvili and ChatGPT",
-<<<<<<< HEAD
     "copyright": "© 2025 Click, Clack, Code: How the Telegraph Made the World Talk",
-=======
-    "title": "My Awesome Book",
-    "author": "Me",
-    "copyright": "© 2025 My Awesome Book",
->>>>>>> parent of 42ab21e (Update README, add LICENSE, and update book content)
-=======
-    "copyright": "© 2025 My Awesome Book",
->>>>>>> parent of f98d512 (Update copyright to match book title)
     "description": "An interactive storybook created with Turn.js"
   },
   "pages": [
